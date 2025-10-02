@@ -9,8 +9,7 @@ const ChatUser = sequelize.define('ChatUser', {
     primaryKey: true
   },
   role: {
-    type: DataTypes.STRING, // si quieres roles como admin, miembro, etc
-    allowNull: true
+    type: DataTypes.STRING, 
   }
 }, {
   timestamps: true

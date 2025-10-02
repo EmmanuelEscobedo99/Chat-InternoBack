@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 4000;
 async function main() {
   try {
     await sequelize.authenticate();
-    await sequelize.sync({ alter: true }); // en dev: sincroniza
+    await sequelize.sync({ alter: true }); 
 
     server.listen(PORT, "0.0.0.0", () =>
       console.log(`Server ok on http://0.0.0.0:${PORT}`)
